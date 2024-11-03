@@ -1,0 +1,79 @@
+
+								CASTLE OF GLASS
+
+
+Idea general:
+Rescatar a la princesa custodiada por un dragon (o alguna otra criatura) en un castillo el cual se encuentra dividido por pisos y cada uno es un nivel.
+La princesa se encuentra en el ultimo cuarto de la torre mas alta. Si perdemos caemos al piso 1.
+Tengo pensado que los pisos se resuelvan mas a modo de acertijo que de accion. Y que una vez que aprendas a superar un piso en especifico cuando te toque
+volver ya vas a saber que hacer.
+
+Cada partida te da puntos y estos funcionan para subir habilidades 
+
+Gameplay:
+
+Inspiracion:
+-El gotico
+-Dracula
+-Edgar allan poe
+-Oscar Wilde (el fantasma de canterville)
+-Shrek
+-El principe de persia
+-Harry potter
+
+
+________________________________________________________________________________________________________________________________________________________________________
+
+Esquema de clases:
+
+CLASS ENTIDAD
+- Clase general para todos los PJs con atributos y metodos comunes para Heroes, Enemigos, NPCs
+atributos comunes: nombre, salud, ataque, defensa, posicion (para ubicarlos en el mapa)
+metodos comunes: moverse(), recibir_daño(), atacar()
+
+
+CLASS ENTIDAD
+	CLASS HEROE(ENTIDAD)
+		CLASS MAGO(HEROE)
+		CLASS CABALLERO(HEROE)
+	CLASS ENEMIGO(ENTIDAD)
+		CLASS ENEMIGO_COMUN(ENEMIGO)
+		CLASS JEFE(ENEMIGO)
+	CLASS NPC(ENTIDAD)
+
+
+
+CLASS HEROE:
+
+Se trata de nuestro personaje protagonista el cual podremos elegir entre las clases Mago, Ogro o Caballero. Cada uno con distintas caracteristicas.
+
+
+________________________________________________________________________________________________________________________________________________________________________
+
+
+
+-Implementar la Lógica de los Puzzles
+Los puzzles son un elemento central en tu juego. En Unity, podrías usar Triggers y Scripts para crear la lógica de los acertijos en cada piso.
+Cada piso tendría su propio script con la lógica del acertijo que, al resolverse, desbloquee el camino hacia el siguiente nivel.
+
+-Diseño de Niveles
+Fácil de probar en Unity: Unity permite ajustar y probar el diseño de niveles visualmente, lo cual es ideal para un castillo de varios pisos.
+Puedes crear un prototipo simple del castillo para ver cómo funcionan los elementos de tus niveles en conjunto, y luego expandir los detalles gráficos.
+
+-Sistema de Reintentos
+Basado en tu idea, si pierdes en un nivel, regresas al piso 1. Esto podría implementarse como un sistema de “checkpoints” donde el personaje revive en 
+el piso inicial, o un sistema que resetea solo los niveles no superados.
+
+
+
+
+________________________________________________________________________________________________________________________________________________________________________
+
+TECHNICAL
+
+-Python:
+Por ahora se que el prototipo principal (al menos de las clases) lo voy a hacer en python para luego pasarlo al lenguaje acorde al motor grafico que vaya
+a elegir. Lo mas probable es que sea unity asi que el prototipo seria migrado a C#.
+
+-IA:
+ChatGPT va a ser mi principal aliado.
