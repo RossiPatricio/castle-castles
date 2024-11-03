@@ -10,39 +10,39 @@ class Entidad:
     self.posicion = posicion
 
   def moverse(self, x, y):
-    pass
+    ...
 
   def recibir_daño(self, cantidad):
     self.salud -= cantidad
 
 class Heroe(Entidad):
-  def __init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion):
-    super().__init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo)
+  def __init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo):
+    super().__init__(nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion)
     self.tipo = tipo
   # Personaje principal
   # Controlado por el jugador
   def moverse(self, x, y):
     super().moverse(x, y)
     # implementar un sistema para que se mueva por eventos de teclado
-    pass
+    ...
   
   def habilidad_especial(self):
     # Varia depende la clase de heroe
-    pass
+    ...
     
   def ataque_especial(self):
     # Varia depende la clase de heroe y esta disponible con la energia al maximo
     # <------------
-    pass
+    ...
 
 class Caballero(Heroe):
   def __init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion):
-    super().__init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo= "Caballero")
+    super().__init__(nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo= "Caballero")
 
 class Ogro(Heroe):
   def __init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion):
-    super().__init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo= "Ogro")
+    super().__init__(nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo= "Ogro")
 
 class Mago(Heroe):
   def __init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion):
-    super().__init__(self, nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo= "Mago")
+    super().__init__(nombre, salud, ataque, fuerza, defensa, energia, velocidad, posicion, tipo= "Mago")
