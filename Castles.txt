@@ -134,10 +134,27 @@ Puedes crear un prototipo simple del castillo para ver cómo funcionan los eleme
 Basado en mi idea, si pierdes en un nivel, regresas al piso 1. Esto podría implementarse como un sistema de “checkpoints” donde el personaje revive en 
 el piso inicial, o un sistema que resetea solo los niveles no superados.
 
+Sistemas de Interacción y Combate: 
+Podrías aprovechar el prototipo en Python para desarrollar las interacciones básicas y las mecánicas de combate, 
+como el daño, la defensa, y la habilidad especial. Esto te ayudará a detectar cualquier ajuste necesario antes de implementar animaciones en Unity.
+
+Pruebas de Inteligencia Artificial: Considera experimentar con comportamientos de IA básicos en Python 
+(como enemigos patrullando o atacando al jugador) para entender mejor cómo quieres que los enemigos reaccionen y persigan. 
+Luego podrás trasladar esta lógica a Unity.
+
+Diseño de Niveles y Enfoque en Jugabilidad: Tener una visión clara de los niveles y la historia (como el rescate de la princesa) 
+le dará una identidad fuerte al juego. Puedes ir dibujando bocetos de los niveles o mapas para tener una idea del espacio y 
+los desafíos que el jugador enfrentará en cada etapa.
+
+Migración Estructurada: Cuando te sientas listo para migrar, lleva la lógica de Python a C# en Unity de forma gradual, 
+probando cada mecánica a medida que la implementas. Esto permitirá que la transición sea más fluida y puedas corregir cualquier 
+problema que surja al cambiar de lenguaje y plataforma.
+
 
 
 
 ________________________________________________________________________________________________________________________________________________________________________
+
 
 TECHNICAL
 
@@ -146,3 +163,29 @@ El prototipo principal (al menos de las clases) lo voy a hacer en python para lu
 
 -IA:
 ChatGPT va a ser mi principal aliado.
+
+
+________________________________________________________________________________________________________________________________________________________________________
+
+
+
+PRIMERA VERSION
+
+
+La idea es que sea muy simple
+
+- Personajes basicos (sin jefes y con un solo tipo de enemigo)
+- Un solo tipo de heroe
+- Mapa basico (Sin divirlo por pisos, niveles, puzzles)
+- Interaccion basica entre el jugador y los enemigos 
+
+
+
+
+
+
+
+
+
+
+
