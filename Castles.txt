@@ -1,5 +1,5 @@
 
-								CASTLE OF GLASS
+								CASTLE & CASTLES
 
 
 Idea general:
@@ -20,6 +20,8 @@ Inspiracion:
 -Shrek
 -El principe de persia
 -Harry potter
+
+-Mapa de dark souls: intrincado y donde si caemos por x lugar llegamos a una zona del juego que puede ser avance o retroceso 
 
 
 ________________________________________________________________________________________________________________________________________________________________________
